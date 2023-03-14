@@ -5,25 +5,24 @@ import { readReservation, updateReservation } from "../utils/api";
 import ReservationForm from "./ReservationForm";
 
 export default function EditReservation() {
-    const history = useHistory();
-    const { reservation_id } = useParams();
-    let initialFormData = {
-        first_name: "",
-        last_name: "",
-        mobile_number: "", 
-        reservation_date: "", 
-        reservation_time: "",
-        people: "",
-    };
+  const history = useHistory();
+  const { reservation_id } = useParams();
+  let initialFormData = {
+    first_name: "",
+    last_name: "",
+    mobile_number: "",
+    reservation_date: "",
+    reservation_time: "",
+    people: "",
+  };
 
-const [formData, setFormData] = useState(initialFormData);
-const [errorArray, setErrorArray] = useState([]);
+  const [formData, setFormData] = useState(initialFormData);
+  const [errorArray, setErrorArray] = useState([]);
 
-// Sends a get request to API using readReservation and reservation_id as an argument.
-// stores the data returned from API in initialFormData 
-// Sets formData to initialFormData
-
-useEffect(() => {
+  // Sends a get request to API using readReservation and reservation_id as an argument.
+  // stores the data returned from API in initialFormData
+  // Sets formData to initialFormData
+  useEffect(() => {
     const abortController = new AbortController();
     const loadReservation = async () => {
       try {
