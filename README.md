@@ -11,7 +11,7 @@ Link: https://restaurant-reservation-64ap.onrender.com
 ## Application Features
 
 If there are no current reservations for the date selected, the reservations section on the dashboard will be left blank.
-![Alt text] (https://github.com/loisobrero/starter-restaurant-reservation/blob/main/images/2023-03-14%20(23).png)
+![Alt text] (/images/2023-03-14%20(23).png)
 
 Any existing reservations and tables on the given date are displayed on the dashboard. Selecting the `next` button takes users to the next day, selecting `previous` takes users to the previous day, and `today` navigates to the current day.
 ![Alt text] (https://github.com/loisobrero/starter-restaurant-reservation/blob/main/images/2023-03-14%20(22).png)
