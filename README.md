@@ -14,7 +14,7 @@ If there are no current reservations for the date selected, the reservations sec
 ![Alt text] (/images/2023-03-14%20(23).png)
 
 Any existing reservations and tables on the given date are displayed on the dashboard. Selecting the `next` button takes users to the next day, selecting `previous` takes users to the previous day, and `today` navigates to the current day.
-![Alt text] (https://github.com/loisobrero/starter-restaurant-reservation/blob/main/images/2023-03-14%20(22).png)
+![Alt text] (https://raw.github.com/loisobrero/starter-restaurant-reservation/blob/main/images/2023-03-14%20(22).png)
 
 Selecting `New Reservation` allows the user to create a new reservation. Users will be alerted if there any errors when filling out the form.
 ![Alt text] (https://github.com/loisobrero/starter-restaurant-reservation/blob/main/images/2023-03-14%20(24).png)
