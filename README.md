@@ -14,7 +14,7 @@ Link: https://restaurant-reservation-64ap.onrender.com
 
 ## Technologies Used
 
-'Back-end'
+`Back-end`
 
 - Node
 - Express
@@ -22,10 +22,10 @@ Link: https://restaurant-reservation-64ap.onrender.com
 - Knex
 - Jest
 
-'Back-end' 
+`Back-end` 
 API Base Url: https://restaurant-reservation-x2ir.onrender.com
 
-'Front-end' 
+`Front-end`
 
 - React
 - Bootstrap
