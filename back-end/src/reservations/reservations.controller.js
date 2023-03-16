@@ -83,6 +83,34 @@ const hasValidProperties = (req, res, next) => {
   next();
 };
 
+  // checks to make sure valid phone number is entered
+  /*const mobileNumberValidation = (req, res, next) => {
+    const { data : {mobile_number }={}} = req.body;
+   const format = /^\d{10}$/
+  if(mobile_number.value.match(format)) 
+  {
+    return next()
+    }
+    next({
+      status: 400,
+      message: `Please include a valid mobile_number.`,
+    }) 
+  } 
+*/
+
+function mobileNumberValidation(req, res, next) {
+  const { mobile_number} = req.body.data;
+
+  if(mobile_number && mobile_number.length > 0) {
+    return next();
+  }
+
+  next({
+    status: 400,
+    message: "Please include a valide mobile_number."
+  })
+};
+
 const futureDateValidation = (req, res, next) => {
   const {
     data: { reservation_date, reservation_time },
@@ -228,6 +256,7 @@ module.exports = {
   list: asyncErrorBoundary(list),
   create: [
     hasValidProperties,
+    mobileNumberValidation,
     dateValidation,
     futureDateValidation,
     isTableBooked,
