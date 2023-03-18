@@ -99,18 +99,17 @@ const hasValidProperties = (req, res, next) => {
 */
 
 function mobileNumberValidation(req, res, next) {
-  const { reservation: {mobile_number} } = req.body.data;
+  const { data:  {mobile_number}  = {}} = req.body
 
-  if(mobile_number.length!=10) {
-    return next();
-  }
-
-  next({
-    status: 400,
-    message: "Please include a valid mobile_number."
-  })
-};
-
+   if(mobile_number.length === 10) {
+    return next()
+    }
+    next({
+      status: 400,
+      message: `Please include a valid mobile_number.`,
+    });
+}
+  
 const futureDateValidation = (req, res, next) => {
   const {
     data: { reservation_date, reservation_time },
