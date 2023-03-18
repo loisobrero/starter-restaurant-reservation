@@ -43,12 +43,12 @@ export default function ReservationForm({
           <label className="col-sm-3 col-form-label">Mobile Number</label>
           <div className="col-sm-8">
             <input
-              type="number"
-              pattern="[0-9]*"
+              type="tel"
+              pattern="[0-9]{10}"
               name="mobile_number"
               className="form-control"
               id="mobile_number"
-              placeholder="111-222-3333"
+              placeholder="(---) --- ----"
               onChange={handleChange}
               value={`${reservation.mobile_number}`}
               required={true}
